@@ -1,0 +1,136 @@
+.body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#overlay {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(27, 27, 27, 0.7));
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hidden {
+  display: none;
+}
+
+#clock {
+  position: absolute;
+  color: whitesmoke;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Nunito", sans-serif;
+  font-size: 90px;
+}
+
+#weather {
+  position: absolute;
+  color: whitesmoke;
+  /* left: 50%; */
+  top: 20%;
+  right: 32%;
+  width: fit-content;
+  font-family: "Nunito", sans-serif;
+}
+
+#greeting {
+  position: absolute;
+  color: whitesmoke;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Nunito", sans-serif;
+  border-bottom: 50%;
+}
+
+#login-form {
+  width: 100%;
+  position: absolute;
+  color: whitesmoke;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+#quote {
+  position: absolute;
+  color: whitesmoke;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+}
+
+#todo-form {
+  position: absolute;
+  color: whitesmoke;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Nunito", sans-serif;
+}
+
+#todo-list {
+  position: absolute;
+  color: whitesmoke;
+  top: 65.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+}
+
+button {
+  width: 20px;
+  height: 18px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 5px 0 10px 5px;
+  color: white;
+  background-color: transparent;
+}
+
+input {
+  text-align: center;
+  border: none;
+  /* 배경 투명하게 */
+  background: transparent;
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: "Nunito", sans-serif;
+}
+
+/* input 박스 클릭 시 테두리 없애기 */
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: whitesmoke;
+}
+
+/* placeholder focus일 때 감추기 */
+input:focus::placeholder {
+  color: transparent;
+}
+li:nth-of-type(n + 5) {
+  display: none;
+}
